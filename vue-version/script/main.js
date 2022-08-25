@@ -5,7 +5,7 @@ const app = new Vue({
     },
     methods:{
         getAlbums(){
-            axios.get('http://localhost/php-ajax-dischi/vue-version/db/server.php')
+            axios.get('http://localhost/php-ajax-dischi/json/controller.php')
             .then(result => {
                 this.albums = result.data;
                 console.log(this.albums);

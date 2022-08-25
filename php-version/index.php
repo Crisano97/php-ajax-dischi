@@ -1,5 +1,5 @@
 <?php 
-    include 'db/database.php';
+    include '../db/database.php';
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +21,6 @@
         <div class="main-container">
             <?php foreach($albums as $album){ ?>
                 <div class="album-card">
-                    <!-- echo $album['poster'] -->
                     <img class="album-img" src="<?php echo $album['poster']; ?>" alt="">
                     <h2 class="color-white">
                         <?php echo $album['title']; ?>
