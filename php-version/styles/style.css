@@ -40,7 +40,6 @@ main{
 .album-card span{
     display: block;
     color: gray;
-    /* font-size: 1.2rem; */
 }
 
 .album-img{
