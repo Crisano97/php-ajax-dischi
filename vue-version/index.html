@@ -24,9 +24,18 @@
         </header>
         <main>
             <div class="main-container">
-                    <ul v-for="album in albums">
-                        <li> {{ album.title }} </li>
-                    </ul>
+                    <div class="album-card" v-for="album in albums">
+                        <img class="album-img" :src="album.poster" :alt="album.title">
+                        <h2 class="color-white">
+                            {{ album.title }}
+                        </h2>
+                        <span>
+                            {{ album.author }}
+                        </span>
+                        <span>
+                            {{ album.year }}
+                        </span>
+                    </div>
             </div>
         </main>
     </div>
